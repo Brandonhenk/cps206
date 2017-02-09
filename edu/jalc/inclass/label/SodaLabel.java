@@ -9,7 +9,7 @@ class SodaLabel{
     text = txt;
   }
   public void setImages(Images image){
-    images = image;
+    this.
   }
   public void setColor(Color color1){
     color = color1;
