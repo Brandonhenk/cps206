@@ -2,8 +2,8 @@ package edu.jalc.inclass.label;
 
 class SodaBottleLabel{
   private final String text;
-  private Image image;
-  private Color color;
+  private SodaBottleImage image;
+  private SodaBottleColor color;
 
   private SodaLabel(){
     this.text = "Coca-Cola";
@@ -26,7 +26,7 @@ class SodaBottleLabel{
   }
 
   double getText(){return image;}
-  Images getImages(){return this.image;}
-  Color getColor(){return this.color;}
+  SodaBottleImage getImages(){return this.image;}
+  SodaBottleColor getColor(){return this.color;}
 
 }
