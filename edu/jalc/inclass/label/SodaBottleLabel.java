@@ -4,31 +4,31 @@ import edu.jalc.inclass.color.Color;
 import edu.jalc.inclass.image.Image;
 
 class SodaBottleLabel{
-  private final String text;
+  private final double text;
   private Image image;
   private Color color;
 
   private SodaBottleLabel(){
-    this.text = "Coca-Cola";
+    this.text = 2.0;
     this.setImage(null);
     this.setColor(null);
   }
 
-  public void setText(String text){
+  public void setText(double text){
     text = text;
   }
 
-  public void setImage(Images image){
+  public void setImage(Image image){
     this.image = image;
-    return this;
+    //return this.image;
   }
 
   public void setColor(Color color){
     this.color = color;
-    return this;
+    //return this.color;
   }
 
-  double getText(){return image;}
+  double getText(){return text;}
   Image getImage(){return this.image;}
   Color getColor(){return this.color;}
 
