@@ -8,25 +8,12 @@ class SodaBottleLabel{
   private Image image;
   private Color color;
 
-  private SodaBottleLabel(){
-    this.text = 2.0;
-    this.setImage(null);
-    this.setColor(null);
-  }
-
-  public void setText(double text){
-    text = text;
-  }
-
-  public void setImage(Image image){
+  public SodaBottleLabel(double text, Image image, Color color){
+    this.text = text;
     this.image = image;
-    //return this.image;
+    this.color = color;
   }
 
-  public void setColor(Color color){
-    this.color = color;
-    //return this.color;
-  }
 
   double getText(){return text;}
   Image getImage(){return this.image;}
