@@ -1,15 +1,14 @@
 package edu.jalc.inclass.lab.display;
 
 public class DisplayTpye{
-  private String analog;
-  private String digital;
+  private String type;
 
-  public DisplayType(String analog, String digital){
-    this.analog = analog;
-    this.digital = digital;
+  public DisplayType(String type){
+    if (type.toLowerCase() == "analog"){
+      this.type == "Analog";
+    }
+    else {this.type == "Digital";}
   }
-  public String getAnalog(){return this.analog;}
 
-  public String getDigital(){return this.digital;}
-
+  public String getType(){return this.type;}
 }
