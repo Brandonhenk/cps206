@@ -1,20 +1,25 @@
 package edu.jalc.watch.display;
 
 public class Display{
-  private final double numbers;
+  private DisplayLogo displaylogo;
   private DisplayType displaytype;
 
-  public Display(double numbers, DisplayType displaytype){
-    this.numers = numbers;
+  public Display(DisplayLogo displaylogo, DisplayType displaytype){
+    this.setDisplayLogo(displaylogo);
     this.setDisplayType(displaytype);
   }
 
-  public double getNumbers(){return this.numers;}
+  public DisplayLogo getDisplayLogo(){ return this.displaylogo;}
 
-  public DiplayType getDisplayType(){ return this.displaytype;}
+  public DisplayType getDisplayType(){ return this.displaytype;}
 
   DisplayType setDisplayType(DisplayType displaytype){
     this.displaytype = displaytype;
-    return this.display;
+    return this.displaytype;
+  }
+
+  DisplayLogo setDisplayLogo(DisplayLogo displaylogo){
+    this.displaylogo = displaylogo;
+    return this.displaylogo;
   }
 }
